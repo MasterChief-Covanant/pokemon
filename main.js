@@ -61,17 +61,27 @@ function stopSprite() {
   if (player.x > 1322) {
     player.x = 1321;
   }
-  if (player.x < houseWalls.trxc && player.y < houseWalls.bryc) {
-    player.x = 382;
-  }
-  if (player.x > houseWalls.tlxc && player.y > houseWalls.blyc) {
-    player.x = 137;
-  }
   if (player.y < -11) {
     player.y = -10;
   }
   if (player.y > 729) {
     player.y = 728;
+  }
+  if (player.y > 168 && player.y < 388) {
+    if (player.x > 401 && player.x < 406) {
+      player.x = 407;
+    }
+    if (player.x > 107 && player.x < 112) {
+      player.x = 106;
+    }
+  }
+  if (player.x > 137 && player.x < 381) {
+    if (player.y > 168 && player.y < 173) {
+      player.y = 167;
+    }
+    if (player.y > 389 && player.y < 394) {
+      player.y = 395;
+    }
   }
 }
 
